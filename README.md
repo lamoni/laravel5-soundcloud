@@ -46,3 +46,10 @@ $soundcloud = $app->make('Soundcloud');
 echo $soundcloud->getAuthUrl();
 ```
 
+
+### Note
+
+If you're having issues with the Service Container not finding the SoundCloudProvider binding, try running the following artisan command:
+```
+php artisan clear-compiled
+```
